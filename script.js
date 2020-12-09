@@ -17,11 +17,52 @@ request.send();
 request.onload = function(){
     var data = JSON.parse(this.response)
     console.log(data);
-    
+ // printing all flag values   
     for(var i=0;i<250;i++)
     {
 console.log(data[i]["flag"]);
     }
 
+// printing countries in asia
+
+var asiacount = data.filter(element=>
+    element.region==='Asia');
+console.log(asiacount);
+
+// population less than 2 lakhs
+
+var lesspopulation = data.filter(element=>
+    element.population < 200000);
+console.log(lesspopulation);
+
+//Print the following details name, capital, flag using forEach function 
+
+function countrydetails(items){
+    console.log("Country:",items.name)
+    console.log("Capital:",items.capital)
+    console.log("Flag:",items.flag)
+    
 }
+data.forEach(countrydetails)
+
+//Print total population using reduce function
+
+var totpop = data.reduce(function(result,item){
+    return result+item.population;
+},0)
+console.log("Total poulation is:",totpop);
+
+
+//print countries with us dollar as currency
+//console.log(element.currencies.code);
+
+var usdcurrency = data.filter(element=>
+    element.currencies[0].code==='USD');
+console.log("Countries with USD currency are:",usdcurrency);  
+
+}
+
+
+
+
 
