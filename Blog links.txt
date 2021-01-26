@@ -1,9 +1,0 @@
-https://premji020.medium.com/objects-and-its-internal-representation-in-javascript-a6e931b79b8b
-
-https://premji020.medium.com/difference-in-behavior-for-copying-contents-in-primitive-and-non-primitive-type-d7009739cde8
-
-https://premji020.medium.com/window-document-screen-what-are-the-differences-between-them-ebc1bebaa7b
-
-https://premji020.medium.com/what-happens-when-you-type-a-url-in-an-address-bar-9221bbc53b09
-
-https://premji020.medium.com/difference-between-http-1-1-and-http-2-2e71cd22ceae
